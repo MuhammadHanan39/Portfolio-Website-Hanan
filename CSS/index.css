@@ -1,0 +1,358 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Roboto&display=swap');
+/* universal CSS */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all .2s linear;
+}
+*::selection{
+    background-color: yellow;
+    color: rgb(49, 24, 24);
+
+}
+html{
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+html::-webkit-scrollbar{
+    width: 1.4rem;
+}
+html::-webkit-scrollbar-track{
+    background-color: rgb(39, 30, 30);
+}
+html::-webkit-scrollbar-thumb{
+    background: yellow;
+}
+body{
+    color:white;
+    padding-left: 35rem;
+    background-color: black;
+    overflow-x: hidden;
+}
+section{
+    min-height: 100vh;
+
+}
+span{
+    color: yellow;
+}
+.heading{
+    text-align: center;
+    font-size: 4.3rem;
+    margin: 0 auto;
+    padding: 3rem 0;
+    margin-bottom: 4rem;
+    border-bottom: .1rem solid white;
+    
+}
+i{   
+    margin-left:8px;
+}
+header{
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: #101111 ;
+    height: 100%;
+    width: 35rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 1000;
+}
+header .user img{
+    display: block;
+    width: 20rem;
+    height: 20rem;
+    border-radius: 50%;
+    margin: 2rem auto;
+    margin-bottom: 1.5rem;
+    border: 5px solid yellow;
+    /* object-fit: cover; */
+}
+header .user h2{
+    text-align: center;
+    color: white;
+    font-size: 3.8rem;
+
+}
+header .user h5{
+    text-align: center;
+    color: white;
+    font-size: 2.2rem;
+    margin: .5rem 0;
+    margin-bottom: 2.1rem;
+
+}
+header .navbar{
+    display: flex;
+    flex-direction: column;
+
+}
+header .navbar a{
+    display: block;
+    text-decoration: none;
+    margin: .5rem auto;
+    text-align: center;
+    color: white;
+    width: 83%;
+    padding: .8rem;
+    background-color: #3F484A;
+    border-radius: 2.4rem;
+    font-size: 2rem;
+    font-weight: 900;
+}
+header .navbar a:hover{
+    background-color: yellow;
+    color: black;
+}
+#menu{
+    position: fixed;
+    right: 2rem;
+    top: 1.7rem;
+    background-color: rgb(104, 90, 90);
+    display: none;
+    columns: #fff;
+    font-size: 2.5rem;
+    padding: 1rem  1.5rem;
+    z-index: 1100;
+
+
+}
+
+#Home{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    padding: 0 12rem;
+}
+#Home h2{
+    font-size: 3.5rem;
+}
+#Home h1{
+    margin: 1rem 0;
+    font-size: 5rem;
+}
+#Home p{
+    margin:.8rem 0;
+    font-size: 2.1rem;
+}
+#Home a{
+    text-decoration: none;
+    margin-top: .8rem;
+    text-align: center;
+    width: 13rem;
+    padding: 1rem;
+    font-size: 1.6rem;
+    color: white;
+    background-color: #3F484A;
+    border-radius: 1.8rem;
+}
+#Home a:hover{
+    background-color: yellow;
+    color: black;
+}
+
+#About{
+    padding: 0 2rem;
+}
+#About h1{
+
+}
+#About h4{
+    margin: 1.8rem 6.5rem;
+    font-size: 2rem;
+}
+
+#About a{
+    display: block;
+    width: 18rem;
+    text-align: center;
+    margin: 0 6.5rem;
+    text-decoration: none;
+    border-radius: 2rem;
+    margin-top: 3rem;
+    padding: .5rem;
+    background-color: #3F484A;
+    color: white;
+    font-size: 1.6rem; 
+}
+#About a:hover{
+    background-color: yellow;
+    color: black;
+}
+#education{
+    padding:0 2rem ;
+}
+#education h1{
+    margin: 0 1rem 2rem 1rem;
+}
+.boxes{
+    display: flex;
+    flex-wrap: wrap;
+}
+.box{
+    width: 31rem;
+    height: 24rem;
+    position: relative;
+    padding: 1.7rem;
+}
+.edu-icon{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 4.5rem;
+    height: 4.5rem;
+    border-radius: 50%;
+    background-color: yellow;
+}
+.edu-icon i{
+    color: black;
+    padding: .6rem;
+    margin: .6rem .7rem;
+    font-size: 1.6rem;
+}
+.vertical-line{
+    width: .2rem;
+    height: 15rem;
+    position: absolute;
+    left: 2.2rem;
+    top: 4.5rem;
+    background-color: white;
+}
+.year{
+    display: block;
+    margin-left: 4.4rem;
+    width: 5.2rem;
+    text-align: center;
+    margin-top: -0.5rem;
+    font-size: 1.3rem;
+    padding: .3rem;
+    color: white;
+    background-color: #3F484A;
+    border-radius: 2.8rem;
+    margin-bottom: 1rem;
+}
+.box h3{
+    margin: .5rem 0  1rem 3.5rem;
+    font-size: 2.4rem;
+}
+.box p{
+    margin: .5rem 0  1rem 3.5rem;
+    font-size: 1.6rem;
+}
+
+#portfolio_container{
+    
+    width: 100%;
+   margin: 15rem 20rem;
+}
+
+
+
+.pic img{
+    margin: 8px 8px;
+    /* width: 298px;
+     */
+     width: 60%;
+    /* height: 200px; */
+    height: 35%;
+    object-fit: cover;
+}
+
+
+
+
+
+#contact{
+    padding: 0 2rem;
+}
+.contact_me{
+    display: flex;
+    flex-direction: row;
+}
+#ContactInfo{
+    margin: 0 3.5rem;
+    margin-top: 11.5rem;
+    padding: .8rem;
+    width: 37%;
+    height: 20rem;
+}
+#ContactInfo h1{
+    font-size: 3rem;
+    margin: 1.5rem 0;
+}
+#ContactInfo div{
+    margin: 1rem 0;
+    font-size: 2rem;
+}
+#form{
+    width: 60%;
+    margin-right: 1.5rem;
+    padding: 1.5rem;
+    margin-top: 3rem;
+
+}
+#form input{
+    display: block;
+    background-color: #101111;
+    width: 100%;
+    color: white;
+    font-size: 1.5rem;
+    height: 4rem;
+    margin: 1.5rem 0;
+    padding: 1.5rem;
+    outline: none;
+    border: none;
+}
+#form textarea{
+    display: block;
+    background-color: #101111;
+    width: 100%;
+    color: white;
+    height: 13rem;
+    padding: 1rem 1.5rem;
+    font-size: 1.6rem;
+    margin: 1.5rem 0;
+    border: none;
+    outline: none;
+}
+
+#form button{
+    width: 12rem;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 2rem;
+    padding: .85rem;
+    background-color: #101111;
+    color: white;
+    font-size: 1.6rem;
+    outline:none
+}
+#form button:hover{
+    background-color: yellow;
+    color: black;
+}
+#ContactInfo i{
+    margin-right:1.6rem;
+} 
+.back_to_home{
+    position: fixed;
+    bottom: 2rem;
+    right: 1.5rem;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 20%;
+    background-color: yellow;
+    /* z-index: 1000; */
+}
+.toggle{
+    left: 0%;
+}
+#top-icon{
+    color: black;
+    margin: .3rem .4rem;
+    font-size: 1.6rem;
+}

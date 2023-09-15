@@ -1,0 +1,128 @@
+ @media (max-width:1320px){
+    .box{
+        margin: 0px auto;
+    }
+    .pic img{
+        margin: 0px auto 0px 5px;
+    }
+}
+@media (max-width:1275px){
+    header{
+        width: 30rem;
+    }
+    #Home{
+        padding: 0 1rem;
+    }
+
+}
+@media (max-width:1275px) and (min-width:1050px){
+    .contact_me{
+        padding: 0;
+        flex-direction: column;
+        align-items: center;
+    }
+    #ContactInfo{
+        width: 100%;
+        margin-top: 2rem;
+        order: 2;
+    }
+    #ContactInfo h1{
+        display: block;
+        width:25rem;
+        margin:0 auto;
+    }
+    
+    #info{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    #info i{
+        margin-left: 2rem;
+        margin-right: .7rem;
+    }
+    #form{
+        width: 80%;
+        margin-top: 0;
+        order: 1;
+    }
+}
+@media (max-width:1050px){
+    html{
+        font-size: 55%;
+    }
+    header{
+        left: -100%;
+    }
+    body{
+        padding: 0 2rem;
+    }
+    #Home{
+        padding: 0 9rem;
+    }
+    #menu{
+        display: block;
+        border-radius: .4rem;
+    }
+    .contact_me{
+        flex-direction: row;
+    }
+    #info{
+        display: block;
+    }
+    #ContactInfo h1{
+        margin: 0;
+    }
+}
+@media (max-width:854px){
+    .contact_me{
+        flex-direction: column;
+    }
+    #ContactInfo{
+        order: 2;
+        width: 100%;
+        margin-top: 2rem;
+        margin-left: 9rem;
+    }
+    #form{
+        width: 80%;
+        margin: 0 auto;
+        order: 1;
+    }
+}
+@media (max-width:600px){
+    html{
+        font-size: 45%;
+    }
+    #form{
+        width: 100%;
+        margin: 0 2rem 0 0;
+    }
+    #ContactInfo{
+        margin: 2rem 2rem 0 2rem;
+        padding: 0;
+    }
+    #Home{
+        padding: 0 2rem;
+    }
+    #About{
+        padding: 0;
+    }
+    #educatio{
+        padding: 0;
+    }
+    #About h4{
+        margin: 1.8rem 2.5rem ;
+    }
+    #About a{
+        margin: 0 2.5rem;
+    }
+    .box{
+        width: 38rem;
+    }
+}
+@media (max-width:400px){
+    header{
+        width: 100%;
+    }
+}
