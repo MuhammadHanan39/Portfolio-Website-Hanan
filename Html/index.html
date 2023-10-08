@@ -7,13 +7,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Website</title>
 
+
+ <!-- ============================ W3 CSS ======================= -->
+ <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
     <!-- ===============Style sheets================ -->
     <link rel="stylesheet" href="/CSS/index.css">
 
     <link rel="stylesheet" href="/CSS/respnsive.css">
 
+   
     <!-- =============== CDN link for Icons ================== -->
     <script src="https://kit.fontawesome.com/411d3a6a19.js" crossorigin="anonymous"></script>
+
+  
+
+
+
+
+
+
 </head>
 
 
@@ -100,7 +113,7 @@
 
 
 
-    <!--============== Html for section3 ==============-->
+    <!--============== Html for section3 (My Education) ==============-->
 
     <section id="education">
         <h1 class="heading">My
@@ -180,26 +193,19 @@
 
 
 
-    <!-- ================== Html for section4 =============-->
+    <!-- ================== Html for section4 (My Portfolio)=============-->
     <section id="portfolio">
         <h1 class="heading">My <span>Portfolio</span></h1>
-        <div id="portfolio_container">
-            <div class="pic">
-                <img src="/img/portfolio_pic.PNG" alt=" ">
-            </div>
-            <!-- <div class="pic">
-                <img src="/img/form.PNG" alt="">
-            </div>
-            <div class="pic">
-                <img src="/img/profile.jpeg" alt="">
-            </div>
-            <div class="pic">
-                <img src="/img/restaurant.PNG" alt="">
-            </div>
-            <div class="pic">
-                <img src="/img/services.PNG" alt="">
-            </div> -->
+        <div id="portfolio-slides">
 
+            <button class="btn btn-left" onclick="plusDivs(-1)">&#10094;</button>
+            <img class="mySlides" src="/img/addcontact.png" alt="First Slide">
+            <img class="mySlides" src="/img/portfolio_pic.PNG" alt="Second Slide">
+            <img class="mySlides" src="/img/login form.png" alt="Third Slide">
+            <img class="mySlides" src="/img/restaurant.PNG" alt="Fourth Slide">
+
+            
+            <button class="btn btn-right" onclick="plusDivs(+1)">&#10095;</button>
         </div>
     </section>
 
@@ -236,9 +242,26 @@
 
 
 
+  <script>
+        var slideIndex = 1;
+showDivs(slideIndex);
 
-    <!-- ================================== INDEX.JS ====================== -->
-    <script src="/Javascript/index.js"></script>
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length} ;
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  x[slideIndex-1].style.display = "block";
+}
+    </script>
+
 
 </body>
 
