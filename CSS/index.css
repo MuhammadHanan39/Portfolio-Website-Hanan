@@ -192,6 +192,7 @@ header .navbar a:hover{
 .boxes{
     display: flex;
     flex-wrap: wrap;
+    margin-top:20%;
 }
 .box{
     width: 31rem;
@@ -250,6 +251,12 @@ header .navbar a:hover{
    /* margin: 5rem 2rem 5rem 5rem; */
    
 }
+
+/* =================================== My Education =========================== */
+#education-portion{
+
+}
+
 /* =========================== My portfolio slides div ======================= */
 #portfolio-slides{
     margin-top: 10rem;
